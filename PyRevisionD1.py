@@ -294,8 +294,8 @@ elif 28 > temp > 0 and not is_sunny:
     print("It is Warm outside 😊")
     print("It is Cloudy outside ☁️")
 
-# Conditional Statement - A one line shortcut for the if-else (Ternary Operator)
-#                         Print or Assign one of the two values based on a condition.
+# Conditional Statement - A one-line shortcut for the if-else (Ternary Operator)
+#                         Print or assign one of the two values based on a condition.
 #                         X if condition else Y
 
 num = 5
@@ -306,5 +306,20 @@ print(result)
 
 a = 3
 b = 8
+max_num = a if a > b else b
+min_num = a if b > a else b
+print(max_num)
+print(min_num)
+
+age = 21
+status = "Adult" if age >= 18 else "Child"
+
+temperature = 30
+weather = "Hot" if temperature >= 28 else "Cold"
+print(weather)
+
+user_role = "Guest"
+access_level = "Full Access" if user_role == 'admin' else "Limited Access"
+print(access_level)
 max_num = a if a > b else b
 print(max_num)
